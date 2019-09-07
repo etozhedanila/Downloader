@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F736971566DAB48656F6F54 /* Pods_DownloaderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090D89AD6046C96F1014B2CF /* Pods_DownloaderApp.framework */; };
+		F634BEE2231E82370057E367 /* DownloadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634BEE1231E82370057E367 /* DownloadsTableViewController.swift */; };
+		F634BEE5231E94A10057E367 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634BEE4231E94A10057E367 /* Download.swift */; };
+		F634BEE8231E95810057E367 /* DownloadsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634BEE7231E95810057E367 /* DownloadsTableViewCell.swift */; };
+		F69C2827231A76BC008AACB7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69C2826231A76BC008AACB7 /* WebKit.framework */; };
+		F6AB8BD12319AD0F00F2C189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD02319AD0F00F2C189 /* AppDelegate.swift */; };
+		F6AB8BD32319AD0F00F2C189 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD22319AD0F00F2C189 /* WebViewController.swift */; };
+		F6AB8BD62319AD0F00F2C189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BD42319AD0F00F2C189 /* Main.storyboard */; };
+		F6AB8BD92319AD0F00F2C189 /* DownloaderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD72319AD0F00F2C189 /* DownloaderApp.xcdatamodeld */; };
+		F6AB8BDB2319AD0F00F2C189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BDA2319AD0F00F2C189 /* Assets.xcassets */; };
+		F6AB8BDE2319AD0F00F2C189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BDC2319AD0F00F2C189 /* LaunchScreen.storyboard */; };
+		F6AB8BE62319B03F00F2C189 /* VideosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BE52319B03F00F2C189 /* VideosTableViewController.swift */; };
+		F6AB8BEA2319B0A900F2C189 /* VideosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BE92319B0A900F2C189 /* VideosTableViewCell.swift */; };
+		F6AB8BEF2319B37900F2C189 /* YoutubeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BEE2319B37900F2C189 /* YoutubeParser.swift */; };
+		F6AB8BF12319B71100F2C189 /* extension String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BF02319B71100F2C189 /* extension String.swift */; };
+		F6AB8BF32319B73600F2C189 /* extension URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BF22319B73600F2C189 /* extension URL.swift */; };
+		F6AB8BF72319C1C200F2C189 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BF62319C1C200F2C189 /* Downloader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		090D89AD6046C96F1014B2CF /* Pods_DownloaderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DownloaderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33408AEFC17DB3EABFCC1549 /* Pods-DownloaderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownloaderApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DownloaderApp/Pods-DownloaderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		36ED349751FE8409269592F6 /* Pods-DownloaderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownloaderApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DownloaderApp/Pods-DownloaderApp.release.xcconfig"; sourceTree = "<group>"; };
+		F634BEE1231E82370057E367 /* DownloadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewController.swift; sourceTree = "<group>"; };
+		F634BEE4231E94A10057E367 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		F634BEE7231E95810057E367 /* DownloadsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsTableViewCell.swift; sourceTree = "<group>"; };
+		F69C2826231A76BC008AACB7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F6AB8BCD2319AD0F00F2C189 /* DownloaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6AB8BD02319AD0F00F2C189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6AB8BD22319AD0F00F2C189 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		F6AB8BD52319AD0F00F2C189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6AB8BD82319AD0F00F2C189 /* DownloaderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DownloaderApp.xcdatamodel; sourceTree = "<group>"; };
+		F6AB8BDA2319AD0F00F2C189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6AB8BDD2319AD0F00F2C189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6AB8BDF2319AD0F00F2C189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6AB8BE52319B03F00F2C189 /* VideosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewController.swift; sourceTree = "<group>"; };
+		F6AB8BE92319B0A900F2C189 /* VideosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosTableViewCell.swift; sourceTree = "<group>"; };
+		F6AB8BEE2319B37900F2C189 /* YoutubeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeParser.swift; sourceTree = "<group>"; };
+		F6AB8BF02319B71100F2C189 /* extension String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension String.swift"; sourceTree = "<group>"; };
+		F6AB8BF22319B73600F2C189 /* extension URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension URL.swift"; sourceTree = "<group>"; };
+		F6AB8BF62319C1C200F2C189 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6AB8BCA2319AD0F00F2C189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69C2827231A76BC008AACB7 /* WebKit.framework in Frameworks */,
+				4F736971566DAB48656F6F54 /* Pods_DownloaderApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF72880AA88550811A9555A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33408AEFC17DB3EABFCC1549 /* Pods-DownloaderApp.debug.xcconfig */,
+				36ED349751FE8409269592F6 /* Pods-DownloaderApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F634BEE3231E83C30057E367 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB8BD22319AD0F00F2C189 /* WebViewController.swift */,
+				F634BEE6231E95570057E367 /* DownloadsTVC */,
+				F6AB8BEB2319B2D000F2C189 /* VideosTVC */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F634BEE6231E95570057E367 /* DownloadsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F634BEE1231E82370057E367 /* DownloadsTableViewController.swift */,
+				F634BEE7231E95810057E367 /* DownloadsTableViewCell.swift */,
+			);
+			path = DownloadsTVC;
+			sourceTree = "<group>";
+		};
+		F6AB8BC42319AD0F00F2C189 = {
+			isa = PBXGroup;
+			children = (
+				F6AB8BCF2319AD0F00F2C189 /* DownloaderApp */,
+				F6AB8BCE2319AD0F00F2C189 /* Products */,
+				BF72880AA88550811A9555A9 /* Pods */,
+				F8A274440FB3359023C6D170 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6AB8BCE2319AD0F00F2C189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB8BCD2319AD0F00F2C189 /* DownloaderApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6AB8BCF2319AD0F00F2C189 /* DownloaderApp */ = {
+			isa = PBXGroup;
+			children = (
+				F634BEE3231E83C30057E367 /* Controllers */,
+				F6AB8BEC2319B30100F2C189 /* Model */,
+				F6AB8BED2319B31400F2C189 /* Supporting */,
+			);
+			path = DownloaderApp;
+			sourceTree = "<group>";
+		};
+		F6AB8BEB2319B2D000F2C189 /* VideosTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB8BE52319B03F00F2C189 /* VideosTableViewController.swift */,
+				F6AB8BE92319B0A900F2C189 /* VideosTableViewCell.swift */,
+			);
+			path = VideosTVC;
+			sourceTree = "<group>";
+		};
+		F6AB8BEC2319B30100F2C189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB8BD72319AD0F00F2C189 /* DownloaderApp.xcdatamodeld */,
+				F6AB8BEE2319B37900F2C189 /* YoutubeParser.swift */,
+				F6AB8BF62319C1C200F2C189 /* Downloader.swift */,
+				F634BEE4231E94A10057E367 /* Download.swift */,
+				F6AB8BF02319B71100F2C189 /* extension String.swift */,
+				F6AB8BF22319B73600F2C189 /* extension URL.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6AB8BED2319B31400F2C189 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB8BD42319AD0F00F2C189 /* Main.storyboard */,
+				F6AB8BD02319AD0F00F2C189 /* AppDelegate.swift */,
+				F6AB8BDA2319AD0F00F2C189 /* Assets.xcassets */,
+				F6AB8BDC2319AD0F00F2C189 /* LaunchScreen.storyboard */,
+				F6AB8BDF2319AD0F00F2C189 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		F8A274440FB3359023C6D170 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F69C2826231A76BC008AACB7 /* WebKit.framework */,
+				090D89AD6046C96F1014B2CF /* Pods_DownloaderApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6AB8BCC2319AD0F00F2C189 /* DownloaderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6AB8BE22319AD0F00F2C189 /* Build configuration list for PBXNativeTarget "DownloaderApp" */;
+			buildPhases = (
+				FD3BC9F78CC00D3429EE5142 /* [CP] Check Pods Manifest.lock */,
+				F6AB8BC92319AD0F00F2C189 /* Sources */,
+				F6AB8BCA2319AD0F00F2C189 /* Frameworks */,
+				F6AB8BCB2319AD0F00F2C189 /* Resources */,
+				62629E739BF473C94EBBB484 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloaderApp;
+			productName = DownloaderApp;
+			productReference = F6AB8BCD2319AD0F00F2C189 /* DownloaderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6AB8BC52319AD0F00F2C189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Виталий Субботин";
+				TargetAttributes = {
+					F6AB8BCC2319AD0F00F2C189 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = F6AB8BC82319AD0F00F2C189 /* Build configuration list for PBXProject "DownloaderApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6AB8BC42319AD0F00F2C189;
+			productRefGroup = F6AB8BCE2319AD0F00F2C189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6AB8BCC2319AD0F00F2C189 /* DownloaderApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6AB8BCB2319AD0F00F2C189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AB8BDE2319AD0F00F2C189 /* LaunchScreen.storyboard in Resources */,
+				F6AB8BDB2319AD0F00F2C189 /* Assets.xcassets in Resources */,
+				F6AB8BD62319AD0F00F2C189 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62629E739BF473C94EBBB484 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DownloaderApp/Pods-DownloaderApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DownloaderApp/Pods-DownloaderApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3BC9F78CC00D3429EE5142 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DownloaderApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6AB8BC92319AD0F00F2C189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AB8BF72319C1C200F2C189 /* Downloader.swift in Sources */,
+				F634BEE8231E95810057E367 /* DownloadsTableViewCell.swift in Sources */,
+				F6AB8BD32319AD0F00F2C189 /* WebViewController.swift in Sources */,
+				F634BEE5231E94A10057E367 /* Download.swift in Sources */,
+				F6AB8BEA2319B0A900F2C189 /* VideosTableViewCell.swift in Sources */,
+				F634BEE2231E82370057E367 /* DownloadsTableViewController.swift in Sources */,
+				F6AB8BE62319B03F00F2C189 /* VideosTableViewController.swift in Sources */,
+				F6AB8BD92319AD0F00F2C189 /* DownloaderApp.xcdatamodeld in Sources */,
+				F6AB8BEF2319B37900F2C189 /* YoutubeParser.swift in Sources */,
+				F6AB8BF12319B71100F2C189 /* extension String.swift in Sources */,
+				F6AB8BD12319AD0F00F2C189 /* AppDelegate.swift in Sources */,
+				F6AB8BF32319B73600F2C189 /* extension URL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6AB8BD42319AD0F00F2C189 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AB8BD52319AD0F00F2C189 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6AB8BDC2319AD0F00F2C189 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6AB8BDD2319AD0F00F2C189 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6AB8BE02319AD0F00F2C189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6AB8BE12319AD0F00F2C189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6AB8BE32319AD0F00F2C189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33408AEFC17DB3EABFCC1549 /* Pods-DownloaderApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAJM5Y54LW;
+				INFOPLIST_FILE = "$(SRCROOT)/DownloaderApp/Supporting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitalySubbotin.DownloaderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6AB8BE42319AD0F00F2C189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36ED349751FE8409269592F6 /* Pods-DownloaderApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PAJM5Y54LW;
+				INFOPLIST_FILE = "$(SRCROOT)/DownloaderApp/Supporting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vitalySubbotin.DownloaderApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6AB8BC82319AD0F00F2C189 /* Build configuration list for PBXProject "DownloaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AB8BE02319AD0F00F2C189 /* Debug */,
+				F6AB8BE12319AD0F00F2C189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6AB8BE22319AD0F00F2C189 /* Build configuration list for PBXNativeTarget "DownloaderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AB8BE32319AD0F00F2C189 /* Debug */,
+				F6AB8BE42319AD0F00F2C189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6AB8BD72319AD0F00F2C189 /* DownloaderApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6AB8BD82319AD0F00F2C189 /* DownloaderApp.xcdatamodel */,
+			);
+			currentVersion = F6AB8BD82319AD0F00F2C189 /* DownloaderApp.xcdatamodel */;
+			path = DownloaderApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6AB8BC52319AD0F00F2C189 /* Project object */;
+}
